@@ -8,7 +8,7 @@ PORT = 50007
 
 input_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 input_socket.bind((HOST, PORT))
-display_buffer = [bytearray([0x00, 0x00, 0x00]) for i in xrange(36)]
+display_buffer = [bytearray([0x00, 0x00, 0x00]) for i in range(36)]
 gamma = [0x80 | int(pow(float(i) / 255.0, 2.5) * 127.0 + 0.5) for i in range(256)]
 
 

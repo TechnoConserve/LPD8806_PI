@@ -26,7 +26,7 @@ class LPD8806Native(LEDDriver):
 
     #Push new data to strand
     def update(self, pixel_buffer):
-        for x in xrange(self.led_count):
+        for x in range(self.led_count):
             self.spi.write(pixel_buffer[x])
             self.spi.flush()
         #seems that the more lights we have the more you have to push zeros

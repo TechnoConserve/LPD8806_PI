@@ -11,7 +11,7 @@ BUFFER_SIZE = 512
 
 
 def main():
-    display_buffer = [bytearray([0x00, 0x00, 0x00]) for i in xrange(36)]
+    display_buffer = [bytearray([0x00, 0x00, 0x00]) for i in range(36)]
 
     #input_stream = FileReader('8k8bitpcm.wav')  # local file for testing
     input_stream = LiveReader()

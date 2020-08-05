@@ -19,7 +19,7 @@ class BreathingLightTests(unittest.TestCase):
         )
 
         step_intensity = []
-        for i in xrange(255):
+        for i in range(255):
             intensity = animation.scale_brightness(float(i))
             step_intensity.append(intensity)
         self.assertListEqual(
@@ -43,7 +43,7 @@ class BreathingLightTests(unittest.TestCase):
         )
 
         step_intensity = []
-        for i in xrange(255):
+        for i in range(255):
             intensity = animation.scale_brightness(float(i))
             step_intensity.append(intensity)
         self.assertListEqual(
@@ -67,7 +67,7 @@ class BreathingLightTests(unittest.TestCase):
         )
 
         step_intensity = []
-        for i in xrange(255):
+        for i in range(255):
             intensity = animation.scale_brightness(float(i))
             step_intensity.append(intensity)
         self.assertListEqual(
@@ -90,7 +90,7 @@ class BreathingLightTests(unittest.TestCase):
             0
         )
         step_intensity = []
-        for i in xrange(255):
+        for i in range(255):
             intensity = animation.scale_brightness(float(i))
             step_intensity.append(intensity)
         self.assertListEqual(
@@ -112,7 +112,7 @@ class BreathingLightTests(unittest.TestCase):
             start=0,
             end=0
         )
-        for i in xrange(512):
+        for i in range(512):
             animation.step(1)
 
         self.assertTrue(False)
