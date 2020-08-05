@@ -26,8 +26,8 @@ def lpush(buffer, byte):
 
 while 1:
     byte_buffer, from_addr = input_socket.recvfrom(36*3)
-    for i in xrange(36):
+    for i in range(36):
         pixel = struct.unpack('BBB', byte_buffer[i*3:(i*3 + 3)])
         display_buffer = lpush(display_buffer, bytearray([gamma[pixel[0]], gamma[pixel[1]], gamma[pixel[2]]]))
     led_strip.update(display_buffer)
-    #print display_buffer
+    #print(display_buffer)

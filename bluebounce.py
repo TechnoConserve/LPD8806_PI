@@ -17,14 +17,14 @@ while (1>0):
                 led.fill(Color(0,0,0),0,startnum-1)
                 led.update()
                 startnum = startnum +1
-                print startnum
+                print(startnum)
         while (startnum > 0): #going back
                 endnum = startnum+numLED
                 led.fill(Color(0,255,0),startnum-1,endnum)
                 led.fill(Color(0,0,0),endnum+1,n)
                 led.update()
                 startnum = startnum-1
-                print startnum
+                print(startnum)
 
 
 

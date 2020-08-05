@@ -34,7 +34,7 @@ class BaseAnimation(object):
                 diff = (self.__ms_time() - self._time_ref)
                 t = max(0, (sleep - diff) / 1000.0)
                 if t == 0:
-                    print "Timeout of %dms is less than the minimum of %d!" % (sleep, diff)
+                    print("Timeout of %dms is less than the minimum of {}!".format(sleep, diff))
                 time.sleep(t)
             cur_step += 1
 

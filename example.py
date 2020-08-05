@@ -1,9 +1,7 @@
-# !/usr/bin/python
-
 from bootstrap import *
 from raspledstrip.animation import *
 
-#setup colors to loop through for fade
+# setup colors to loop through for fade
 colors = [
     (255.0, 0.0, 0.0),
     (0.0, 255.0, 0.0),
@@ -26,9 +24,9 @@ for c in range(4):
 
 led.all_off()
 
-#animations - each animation method moves the animation forward one step on each call
-#after each step, call update() to push it to the LED strip
-#sin wave animations
+# animations - each animation method moves the animation forward one step on each call
+# after each step, call update() to push it to the LED strip
+# sin wave animations
 anim = Wave(led, Color(255, 0, 0), 4)
 for i in range(led.last_index):
     anim.step()

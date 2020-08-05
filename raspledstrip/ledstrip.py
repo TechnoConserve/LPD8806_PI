@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-from color import Color, ColorHSV
+from .color import Color, ColorHSV
 
 
 class ChannelOrder:
@@ -16,7 +15,6 @@ class ChannelOrder:
         
 
 class LEDStrip:
-
 #    def __init__(self, leds, use_py_spi = True, dev="/dev/spidev0.0", driver="LPD8806"):
     def __init__(self, driver):
         """

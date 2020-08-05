@@ -49,7 +49,7 @@ class LPD8806SPI(LEDDriver):
         self.spi = spidev.SpiDev()
         self.spi.open(0, 0)
         self.spi.max_speed_hz = 18000000
-        print 'py-spidev MHz: %d' % (self.spi.max_speed_hz / 1000000.0)
+        print('py-spidev MHz: {}'.format(self.spi.max_speed_hz / 1000000.0))
 
     def update(self, pixel_buffer):
         self.spi.xfer2([item for sublist in pixel_buffer for item in sublist]+[0x00, 0x00, 0x00])

@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 """
 use "from bootstrap import *" from any script to do all the standard setup 
 and checks needed by any script
@@ -26,10 +24,10 @@ You may also need to unblacklist the spi_bcm2708 module in
 """)
     sys.exit(2)
 
-#permissions check
+# permissions check
 try:
     open(dev)
-except IOError as  e:
+except IOError as e:
     if e.errno == 13:
         sys.stderr.write("""
 It looks like SPI device /dev/spidev0.0 has the wrong permissions.

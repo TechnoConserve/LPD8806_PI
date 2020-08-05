@@ -1,7 +1,10 @@
+#!/usr/bin/python
+
+
 from bootstrap import *
 from raspledstrip.animation import *
 
-
+ 
 colors = [
     (255.0, 0.0, 0.0),
     (0.0, 255.0, 0.0),
@@ -9,7 +12,7 @@ colors = [
     (255.0, 255.0, 255.0),
 ]
 while (1>0):
-	print "starting"
+	print("starting")
 	anim = RainbowCycle(led)
 	for i in range(384 * 2):
     		anim.step()

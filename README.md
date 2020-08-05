@@ -4,6 +4,10 @@ A Python library for the Raspberry Pi to drive LPD8806 based RGB light strips.
 
 Initial code from: https://github.com/Sh4d/LPD8806
 
+Forked again from: https://github.com/cghercoias/LPD8806_PI
+
+Adapted to work with Python3
+
 Getting Started 
 ---------------
 First off, you need to enable SPI if it hasn't been already. 

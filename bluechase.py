@@ -36,14 +36,14 @@ while (1>0):
 	#time.sleep(.3)
 
         while (endnum < n-1): #going there
-		print "start"
+		print("start")
                 endnum = startnum+numLED
                 led.fill(Color(0,255,0),startnum,endnum)
                 led.fill(Color(0,0,0),0,startnum-1)
                 led.update()
 		#time.sleep(.3)
                 startnum = startnum +1
-                print startnum
+                print(startnum)
 
 
 	led.fill(Color(0,0,0),n-(numLED-1),n-(numLED))
@@ -90,7 +90,7 @@ while (1>0):
                 #led.fill(Color(0,0,0),endnum+1,n)
                 #led.update()
                 #startnum = startnum-1
-                #print startnum
+                #print(startnum)
 
 
 
