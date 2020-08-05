@@ -1,8 +1,9 @@
 import math
 import random
+import time
 
-from color import *
-import util
+from .color import *
+from . import timecolors, util
 
 
 class BaseAnimation(object):
@@ -325,10 +326,6 @@ class Wave(BaseAnimation):
             self._led.set(self._start + i, c2)
 
         self._step += amt
-
-
-import time
-import timecolors
 
 
 class RGBClock(BaseAnimation):
